@@ -1,43 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Portfolio </title>
-</head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon</title>
+    <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+</head>        
 <body>
-
-	<h1>My Portfolio</h1>
-	<p>Ting
-	</p>
-
-<img src="SciFicity2.png" alt="SciFicity2" width="1010" height="512">
-
-
-<p>Ting2
-	</p>
-
-	<img src="Final_1.png" alt="Final_1" width="1010" height="512">	
-
-<p>street tings
-	</p>
-
-
-	<img src="Deepstreets.png" alt="Deepstreets" width="1010" height="512">	
-
-
-
-
-
-
-	<div class="audiocontainer">
+    <div class="container">
+        <div class="navbar">
+            <img src="images/logo.png" alt=logo.png width="200" height="50" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                
+            </nav>
+        </div>
+        
+        <div class="row">
+            <div class="col">
+                <h1>Welcome</h1>
+                <p>The future of racing is almost here...<br>Immerse yourself... 
+                <br>Horizon is a retro-futuristic game that takes place in a parallel world in 2000.<br> The player takes control of a astonishing racing car with great power with the ultimate objective to become the number 1 racer in the world.
+                <br>This game features a beautiful retro-futuristic visual atmosphere along with stunning visuals.
+                <br>The main selling point of this game are the aesthetic of the lights which fills the city with life.</p>
+                <button type="button">Explore</button>
+                	<div class="audiocontainer">
 
 	<audio id="audio" preload="auto" tabindex="0" controls="" >
-<source src="Dropit 321.mp3">
+<source src="Dropit321.mp3">
 
 </audio>
 
 	<ul id="playlist">
 <li class="active">
-	<a href="Dropit 321.mp3">
+	<a href="Dropit321.mp3">
 		 Drop it 3 2 1
 	</a>
 </li>
@@ -58,79 +62,32 @@
 </ul>
 		</div>
 
+            </div>
+            <div class="col">
+                <div class="card card1">
+                    <h4>Ground Breaking Graphics.</h4>
+                    <p>Sleek design.</p>
+                </div>
+                 <div class="card card2">
+                    <h4>The Future..</h4>
+                    <p>Cutting Edge Technology.</p>
+                </div>
+                 <div class="card card3">
+                    <h4>Street Racing.</h4>
+                    <p>Race to the limits...</p>
+                </div>
+
+            </div>
+        </div>
+        
+        
+        
+    </div>
+     
+     
+     
 
 
 
-
-<script>
-$(document).ready(function () {	
-init();
-function init(){
-
-	var audio = $('#audio');
-	var playlist = $('#playlist');
-	var tracks = playlist.find('li a');
-
-	audio[0].volume = .10;
-	audio[0].play();
-
-playlist.on('click','a', function(e){
-		e.preventDefault();
-		link = $(this);
-		current = link.parent().index();
-		run(link, audio[0]);
-
-	});
-
-}
-function run(link, player){
-				player.src = link.attr('href');
-				par = link.parent();
-				par.addClass('active').siblings().removeClass('active');
-				player.load();
-				player.play();
-
-	}
-
-});S
-
-
-</script>
-
-
-
-
-
-
-<style>
-	.button {
-		background-color: lightgreen;
-
-	}
-	.button:hover{
-		background-color: green;
-	}
-</style>
-
-
-	<form action="index.html" method="get">
-		<label for="Email">Email:</label>
-		<input type="email" name="email" placeholder="Email" ><br>
-
-		<label for="Phone">Phone Number:</label>
-		<input type="Number" name="Phone" placeholder="Phone Number"><br>
-
-		<label for="Text">Message:</label>
-		<textarea name="Text"rows="8" cols="80"></textarea><br>
-
-		<input class="button" type="submit" value="submit">
-		</form>
-
-
-
-
-
-
-
-</body>
+</body>           
 </html>
