@@ -40,7 +40,7 @@ nav ul li a{
     text-decoration: none;
     font-size: 18px;
     overflow: hidden;
-    transition: 0.8s;
+    transition: 2s;
     display: block;
 }
 nav ul li a:hover{
